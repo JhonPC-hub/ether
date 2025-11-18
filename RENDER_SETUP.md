@@ -32,17 +32,27 @@ Completa los siguientes campos:
   ```
 - **Plan:** Selecciona **Free** (o el plan que prefieras)
 
-### 4. Variables de entorno (opcional)
+### 4. Variables de entorno
 
-No necesitas configurar variables de entorno para esta aplicación, ya que usa localStorage.
+**NO necesitas configurar variables de entorno** para esta aplicación, ya que:
+- Usa `localStorage` en el navegador para almacenar datos (usuarios, perfumes, carrito)
+- No requiere conexión a base de datos
+- No necesita archivos de configuración del servidor
 
-### 5. Deploy
+### 5. Disco/Volumen persistente
+
+**NO necesitas un disk ni volumen persistente** porque:
+- Todos los datos se guardan en `localStorage` del navegador de cada usuario
+- Las imágenes son URLs externas (no se almacenan en el servidor)
+- No hay archivos que necesiten persistencia en el servidor
+
+### 6. Deploy
 
 1. Haz clic en **"Create Web Service"**
 2. Render comenzará a construir y desplegar tu aplicación
 3. El proceso puede tardar unos minutos
 
-### 6. Tu sitio estará listo
+### 7. Tu sitio estará listo
 
 Una vez completado el deploy, tu sitio estará disponible en:
 **https://ether.onrender.com** (o la URL que Render te asigne)
